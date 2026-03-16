@@ -40,6 +40,26 @@ const canonical = canonicalURL || defaultCanonical.href;
   <meta property="twitter:title" content={fullTitle} />
   <meta property="twitter:description" content={description} />
 
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tierarztkosten Rechner",
+      "url": "https://tierarztbesuch-kosten-rechner-got.de",
+      "description": "Berechnen Sie die Kosten für Ihren Tierarztbesuch nach der aktuellen GOT 2022",
+      "inLanguage": "de-DE"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tierarztkosten Rechner",
+      "url": "https://tierarztbesuch-kosten-rechner-got.de"
+    }
+  </script>
+
   <!-- Analytics -->
   <script defer data-domain="tierarztbesuch-kosten-rechner-got.de" src="https://plausible.io/js/script.js"></script>
 </head>
