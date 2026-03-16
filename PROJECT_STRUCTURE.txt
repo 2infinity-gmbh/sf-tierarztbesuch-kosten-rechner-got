@@ -1,0 +1,53 @@
+tierarztbesuch-kosten-rechner-got/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # Firebase auto-deploy workflow
+├── src/
+│   ├── content/
+│   │   └── config.ts               # Content collections config
+│   ├── layouts/
+│   │   ├── BaseLayout.astro        # Main layout with SEO & navigation
+│   │   └── ArticleLayout.astro     # Layout for articles
+│   ├── pages/
+│   │   ├── artikel/
+│   │   │   ├── index.astro         # Articles listing
+│   │   │   └── tierarztkosten-rechner-was-kostet-tierarztbesuch.astro
+│   │   ├── index.astro             # Calculator landing page
+│   │   ├── got.astro               # GOT 2022 information
+│   │   ├── impressum.astro         # Legal imprint
+│   │   ├── datenschutz.astro       # Privacy policy
+│   │   └── sitemap.xml.ts          # Dynamic sitemap generator
+│   ├── styles/
+│   │   └── global.css              # TailwindCSS imports
+│   └── env.d.ts                    # TypeScript definitions
+├── public/
+│   ├── favicon.svg                 # Site favicon
+│   └── robots.txt                  # SEO robots file
+├── astro.config.mjs                # Astro configuration
+├── tailwind.config.mjs             # TailwindCSS theme config
+├── tsconfig.json                   # TypeScript config
+├── package.json                    # Dependencies
+├── firebase.json                   # Firebase Hosting config
+├── .firebaserc                     # Firebase project config
+├── .gitignore                      # Git ignore rules
+└── WEBSITE_COMPLETE_SUMMARY.md     # Complete documentation
+
+BUILT OUTPUT (dist/):
+├── index.html                      # Landing page
+├── got/index.html                  # GOT info
+├── artikel/
+│   ├── index.html                  # Articles listing
+│   └── tierarztkosten-rechner-was-kostet-tierarztbesuch/index.html
+├── impressum/index.html            # Imprint
+├── datenschutz/index.html          # Privacy
+├── sitemap.xml                     # Site map
+├── robots.txt                      # Robots file
+└── _astro/                         # Optimized CSS/JS bundles
+    ├── hoisted.B2sTCLb5.js         # Calculator script
+    ├── hoisted.lCUHE6ev.js         # Mobile menu script
+    └── *.css                       # Optimized stylesheets
+
+Total Pages: 6
+Total Files: ~30
+Build Time: < 1 second
+Status: ✅ Production Ready
