@@ -5,4 +5,5 @@ export default defineConfig({
   site: 'https://tierarztbesuch-kosten-rechner-got.de',
   integrations: [tailwind()],
   output: 'static',
+  trailingSlash: 'ignore',
 });
