@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Ratgeber Tierarztkosten"
+  description="Hilfreiche Artikel rund um Tierarztkosten, die GOT 2022 und wie Sie bei Ihrem Tierarztbesuch Geld sparen können."
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      Ratgeber Tierarztkosten
+    </h1>
+    <p class="text-xl text-gray-600 mb-12 max-w-3xl">
+      Alles Wissenswerte über Tierarztkosten, die Gebührenordnung für Tierärzte
+      und wie Sie optimal für die Gesundheit Ihres Haustieres vorsorgen.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Article 1 -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+        <div class="p-6">
+          <div class="text-sm text-primary-600 font-semibold mb-2">
+            Ratgeber
+          </div>
+          <h2 class="text-2xl font-bold mb-3">
+            <a href="/artikel/tierarztkosten-rechner-was-kostet-tierarztbesuch" class="hover:text-primary-600">
+              Was kostet der Tierarztbesuch wirklich?
+            </a>
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Erfahren Sie, wie viel ein Tierarztbesuch kostet und welche Faktoren
+            die Rechnung beeinflussen. Inkl. GOT 2022 Übersicht und praktischen
+            Tipps zum Sparen.
+          </p>
+          <a href="/artikel/tierarztkosten-rechner-was-kostet-tierarztbesuch" class="text-primary-600 hover:text-primary-700 font-medium">
+            Weiterlesen →
+          </a>
+        </div>
+      </article>
+
+      <!-- Placeholder for more articles -->
+      <article class="bg-gray-50 rounded-lg shadow overflow-hidden border-2 border-dashed border-gray-300">
+        <div class="p-6">
+          <div class="text-sm text-gray-500 font-semibold mb-2">
+            Demnächst
+          </div>
+          <h2 class="text-2xl font-bold mb-3 text-gray-700">
+            Weitere Artikel folgen
+          </h2>
+          <p class="text-gray-600">
+            Wir arbeiten an weiteren hilfreichen Ratgeber-Artikeln rund um
+            Tierarztkosten und Tiergesundheit.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-16 bg-primary-50 rounded-lg p-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">Kosten vorab berechnen</h2>
+      <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+        Nutzen Sie unseren kostenlosen Tierarztkosten-Rechner, um die Kosten
+        für Ihren Tierarztbesuch vorab zu kalkulieren.
+      </p>
+      <a href="/" class="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition font-semibold text-lg">
+        Zum Kostenrechner
+      </a>
+    </div>
+  </div>
+</BaseLayout>
