@@ -7,4 +7,5 @@ export default defineConfig({
     tailwind(),
   ],
   output: 'static',
+  trailingSlash: 'ignore',
 });
