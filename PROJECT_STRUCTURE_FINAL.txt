@@ -1,0 +1,48 @@
+tierarztbesuch-kosten-rechner-got/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml                 # CI/CD: Auto-deploy to Firebase
+│
+├── src/
+│   ├── layouts/
+│   │   ├── BaseLayout.astro          # Main layout with SEO, nav, footer
+│   │   └── ArticleLayout.astro       # Article-specific layout
+│   │
+│   ├── pages/
+│   │   ├── index.astro               # Homepage with calculator
+│   │   ├── got.astro                 # GOT 2022 information
+│   │   ├── impressum.astro           # Legal notice
+│   │   ├── datenschutz.astro         # Privacy policy
+│   │   └── artikel/
+│   │       ├── index.astro           # Articles listing
+│   │       └── tierarztkosten-rechner-was-kostet-tierarztbesuch.astro
+│   │
+│   ├── content/
+│   │   └── config.ts                 # Content collections schema
+│   │
+│   └── styles/
+│       └── global.css                # Global styles
+│
+├── public/
+│   ├── favicon.svg
+│   └── robots.txt
+│
+├── Configuration Files:
+├── astro.config.mjs                  # Astro + integrations
+├── tailwind.config.mjs               # TailwindCSS config
+├── tsconfig.json                     # TypeScript config
+├── package.json                      # Dependencies
+├── firebase.json                     # Firebase hosting rules
+├── .firebaserc                       # Firebase project ID
+└── .gitignore
+
+Built Output (dist/):
+├── index.html                        # Static homepage
+├── artikel/                          # Article pages
+├── got/                              # GOT info page
+├── impressum/                        # Legal page
+├── datenschutz/                      # Privacy page
+├── _astro/                           # Optimized assets
+├── sitemap.xml                       # SEO sitemap
+└── robots.txt                        # Search engine rules
